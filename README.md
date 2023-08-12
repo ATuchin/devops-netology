@@ -1,6 +1,10 @@
 # devops-netology
 edited file MD
 
+https://github.com/ATuchin/devops-netology/network
+   ![image](https://github.com/ATuchin/devops-netology/assets/10049100/f3c51d75-6ac9-492c-b404-5f075099f3a0)
+
+
 .gitignore внутри terraform позволит игнорировать в общих чертах файлы:
 ./terraform игнорирует файл terraform в той же директории 
             

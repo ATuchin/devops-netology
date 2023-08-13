@@ -43,7 +43,12 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 
 5 Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
 
-Ответ Хэш 8c928e83589d90a031f811fae52a81be7153e82f 
+Ответ git log -S 'func providerSource(' --reverse --date=short ищем появление далее смотрим коммит 
+git show 8c928e83589d90a031f811fae52a81be7153e82f
+в нем есть +func providerSource(services *disco.Disco) getproviders.Source {
+
+ 
+Хэш 8c928e83589d90a031f811fae52a81be7153e82f 
 / providerSource constructs a provider source based on a combination of the
 // CLI configuration and some default search locations. This will be the
 // provider source used for provider installation in the "terraform init"
@@ -67,7 +72,8 @@ Author: James Bardin <j.bardin@gmail.com>
 
 
 7 Кто автор функции synchronizedWriters?
-Ответ 
+Ответ git log -S 'synchronizedWriters' --pretty=format:"%an %ad" --reverse --date=short
+
 commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
 Author: Martin Atkins <mart@degeneration.co.uk>
 Date:   Wed May 3 16:25:41 2017 -0700
